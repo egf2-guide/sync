@@ -37,6 +37,25 @@
             "index": "not_analyzed"
           }
         }
+      },
+      "post": {
+        "object_type": "post",
+        "mapping": {
+          "id": {"type": "string", "index": "not_analyzed"},
+          "description": {"type": "string"}
+        }
+      },
+      "post_user": {
+        "mapping": {
+          "id": {"type": "string", "index": "not_analyzed"},
+          "combo": {"type": "string"}
+        }
+      },
+      "admin_role": {
+        "object_type": "admin_role",
+        "mapping": {
+          "id": {"type": "string", "index": "not_analyzed"}
+        }
       }
     }
   },
@@ -44,7 +63,7 @@
   "queue": "rethinkdb",
   "consumer-group": "sync",
   "rethinkdb": {
-    "db": "eigengraph",
+    "db": "guide",
     "table": "events",
     "offsettable": "event_offset"
   }
