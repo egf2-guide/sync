@@ -67,5 +67,12 @@
     "db": "guide",
     "table": "events",
     "offsettable": "event_offset"
+  },
+  "kafka": {
+    "hosts": [
+      "localhost:9092"
+    ],
+    "client-id": "sync",
+    "topic": "events"
   }
 }
