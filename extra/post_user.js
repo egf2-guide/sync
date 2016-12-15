@@ -1,6 +1,5 @@
 "use strict";
 
-const config = require("../components").config;
 const elastic = require("../components").elasticSearch;
 
 const indexName = "post_user";
