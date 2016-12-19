@@ -42,7 +42,7 @@
         "object_type": "post",
         "mapping": {
           "id": {"type": "string", "index": "not_analyzed"},
-          "description": {"type": "string"},
+          "desc": {"type": "string"},
           "created_at": {"type": "date"}
         }
       },
